@@ -1,0 +1,269 @@
+---
+title: "Hidden Dependencies - Concentration Risk in the Enterprise AI Ecosystem"
+author: "Mark Hamer"
+date: "May 2026"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+## Introduction
+
+The enterprise AI market looks diverse on the surface. Hundreds of vendors sell AI-powered products across every major industry. But most of them don't build their own AI. They build on top of someone else's.
+
+This project tried to find out who that someone else actually is. We studied 199 enterprise AI vendors across 10 sectors: cybersecurity, legal, healthcare, financial services, HR, sales, marketing, customer support, productivity, and developer tools.
+
+We built a Python script that automatically scraped each vendor's public materials including their website, engineering blog, job postings, press releases, and GitHub. That text was sent to the Anthropic API, which extracted any mentions of foundation model dependencies. Each result came back with a confidence score and a direct quote from the source as evidence.
+
+After two rounds of validation and manual review, we confirmed 66 dependency relationships across 41 vendors. One vendor can have multiple relationships because many products integrate more than one foundation model. For example, a productivity tool might use OpenAI for text generation and Google for embeddings. The 66 relationships represent individual vendor-to-provider links, not unique vendors.
+
+---
+
+79% of the 199 enterprise AI vendors, do not publicly disclose what their product runs on. The charts below cover what we found in the remaining 21%.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(tidyverse)
+library(ggplot2)
+library(scales)
+
+all_vendors <- read_csv("enterprise_ai_vendors_200_no_crowdstrike.csv")
+
+confirmed <- read_csv("classify_me_-_classify_me_csv.csv") %>%
+  filter(!is.na(id), id != "") %>%
+  filter(!is.na(vendor), vendor != "")
+
+all_vendors <- read_csv("enterprise_ai_vendors_200_no_crowdstrike.csv")
+
+total_vendors  <- 199
+disclosing     <- n_distinct(confirmed$vendor)  # 41
+non_disclosing <- total_vendors - disclosing     # 158
+```
+
+```{r opacity-waffle, fig.width=8, fig.height=4.5}
+waffle_df <- data.frame(
+  x      = rep(1:20, 10)[1:total_vendors],
+  y      = rep(10:1, each = 20)[1:total_vendors],
+  status = c(rep("No confirmed dependency", non_disclosing),
+             rep("Dependency confirmed", disclosing))
+) %>%
+  mutate(status = factor(status, levels = c("No confirmed dependency",
+                                             "Dependency confirmed")))
+
+ggplot(waffle_df, aes(x = x, y = y, fill = status)) +
+  geom_tile(color = "white", linewidth = 1.2, width = 0.85, height = 0.85) +
+  scale_fill_manual(values = c(
+    "No confirmed dependency" = "#2C2C2A",
+    "Dependency confirmed"    = "#1D9E75"
+  )) +
+  labs(
+    title    = "79% of enterprise AI vendors disclose no model dependencies",
+    subtitle = paste0("Each square = 1 vendor. ", total_vendors, " vendors studied across 10 sectors."),
+    fill     = NULL
+  ) +
+  theme_void() +
+  theme(
+    legend.position  = "bottom",
+    plot.title       = element_text(size = 14, face = "bold", margin = margin(b = 6)),
+    plot.subtitle    = element_text(size = 11, color = "gray40", margin = margin(b = 12)),
+    legend.text      = element_text(size = 11)
+  )
+```
+*199 enterprise AI vendors studied across 10 sectors. Each square represents one vendor.*
+
+---
+
+```{r}
+provider_counts <- confirmed %>%
+  filter(!is.na(provider), provider != "") %>%
+  mutate(provider = case_when(
+    provider == "OpenaAI"              ~ "OpenAI",
+    provider == "Claude"               ~ "Anthropic",
+    provider == "Azure"                ~ "Microsoft",
+    provider %in% c("AWS", "multi-LLM architecture", "proprietary") ~ NA_character_,
+    TRUE ~ provider
+  )) %>%
+  filter(!is.na(provider)) %>%
+  group_by(provider) %>%
+  summarise(vendors = n_distinct(vendor)) %>%
+  arrange(desc(vendors)) %>%
+  mutate(provider = fct_reorder(provider, vendors))
+```
+
+
+
+```{r provider-concentration, fig.width=7, fig.height=5}
+provider_counts <- confirmed %>%
+  filter(!is.na(provider), provider != "") %>%
+  mutate(provider = case_when(
+    provider == "OpenaAI"                                        ~ "OpenAI",
+    provider == "Claude"                                         ~ "Anthropic",
+    provider == "Azure"                                          ~ "Microsoft",
+    provider == "AWS"                                            ~ "Microsoft",
+    provider == "multi-LLM architecture"                         ~ "Multi-LLM",
+    provider %in% c("xAI", "Poolside", "Paige", "Kasisto", 
+                    "Writer", "proprietary")                     ~ "Proprietary",
+    TRUE ~ provider
+  )) %>%
+  group_by(provider) %>%
+  summarise(vendors = n_distinct(vendor)) %>%
+  arrange(desc(vendors)) %>%
+  mutate(provider = fct_reorder(provider, vendors))
+
+ggplot(provider_counts, aes(x = vendors, y = provider,
+       fill = provider %in% c("OpenAI", "Anthropic", "Google", "Microsoft"))) +
+  geom_col(width = 0.6) +
+  geom_text(aes(label = vendors), hjust = -0.3, size = 3.5, color = "gray30") +
+  scale_fill_manual(values = c("TRUE" = "#1D9E75", "FALSE" = "#888780")) +
+  scale_x_continuous(expand = expansion(mult = c(0, 0.15))) +
+  labs(
+    title    = "Among vendors that disclose, two providers dominate",
+    subtitle = "Number of vendors with confirmed dependency, by provider",
+    x        = NULL,
+    y        = NULL
+  ) +
+  theme_minimal() +
+  theme(
+    legend.position    = "none",
+    plot.title         = element_text(size = 14, face = "bold", margin = margin(b = 6)),
+    plot.subtitle      = element_text(size = 11, color = "gray40", margin = margin(b = 12)),
+    panel.grid.major.y = element_blank(),
+    panel.grid.minor   = element_blank(),
+    axis.text.y        = element_text(size = 11)
+  )
+```
+
+Among vendors that do disclose, OpenAI and Anthropic together account for 85% of confirmed dependencies. The HHI score of 3,950 puts this well above the threshold economists use to define high concentration. This is measured only on the 23% who disclosed anything. The true concentration across all 199 vendors is unknown.
+
+---
+
+```{r heatmap, fig.width=9, fig.height=6}
+
+all_vendors <- read_csv("vendors_clean.csv")
+
+heatmap_data <- confirmed %>%
+  filter(!is.na(provider), provider != "") %>%
+  mutate(provider = case_when(
+    provider %in% c("OpenaAI", "Azure", "AWS")               ~ "OpenAI",
+    provider == "Claude"                                       ~ "Anthropic",
+    provider %in% c("xAI","Poolside","Paige","Kasisto",
+                    "Writer","proprietary")                    ~ "In-house /\nunclear upstream",
+    provider == "multi-LLM architecture"                       ~ "Multi-provider\nrouting",
+    TRUE ~ provider
+  )) %>%
+  filter(provider != "NA", !is.na(provider)) %>%
+  left_join(all_vendors %>% select(name, sector), by = c("vendor" = "name")) %>%
+  filter(!is.na(sector)) %>%
+  group_by(sector, provider) %>%
+  summarise(n = n_distinct(vendor), .groups = "drop") %>%
+  mutate(
+    provider = factor(provider, levels = c(
+      "OpenAI", "Anthropic", "Google",
+      "In-house /\nunclear upstream", "Multi-provider\nrouting"
+    )),
+    is_secondary = provider %in% c("In-house /\nunclear upstream",
+                                    "Multi-provider\nrouting"),
+    sector = fct_reorder(sector, n, sum)
+  ) %>%
+  filter(!is.na(provider))
+
+ggplot(heatmap_data, aes(x = provider, y = sector, fill = n, alpha = is_secondary)) +
+  geom_tile(color = "white", linewidth = 1) +
+  geom_text(aes(label = ifelse(n > 0, n, "")),
+            size = 4, fontface = "bold",
+            color = ifelse(heatmap_data$n >= 6, "white", "#085041")) +
+  scale_fill_gradient(low = "#9FE1CB", high = "#085041", na.value = "gray95") +
+  scale_alpha_manual(values = c("FALSE" = 1, "TRUE" = 0.35)) +
+  scale_x_discrete(position = "bottom") +
+  coord_cartesian(clip = "off") +
+  geom_vline(xintercept = 3.5, linetype = "dashed",
+             color = "gray70", linewidth = 0.5) +
+  labs(
+    title    = "The visible AI ecosystem converges on a small number of foundation providers",
+    subtitle = paste0(
+      "Vendors per sector - vendors may appear under multiple providers - ",
+      "Azure OpenAI counted under OpenAI\n",
+      "154 vendors (77%) disclosed no dependency, not shown"
+    ),
+    x = NULL, y = NULL,
+    caption  = "Left of divider: confirmed foundation providers - Right: opaque / secondary structures"
+  ) +
+  theme_minimal() +
+  theme(
+    legend.position  = "none",
+    plot.title       = element_text(size = 12, face = "bold", margin = margin(b = 4)),
+    plot.subtitle    = element_text(size = 9, color = "gray40", margin = margin(b = 16)),
+    plot.caption     = element_text(size = 9, color = "gray50", hjust = 0, margin = margin(t = 10)),
+    panel.grid       = element_blank(),
+    axis.text.x      = element_text(size = 10),
+    axis.text.y      = element_text(size = 10),
+    plot.margin      = margin(t = 15, r = 15, b = 15, l = 15)
+  )
+```
+
+Concentration is not isolated to one sector. OpenAI and Anthropic appear across productivity, legal, marketing, cybersecurity, developer tools, and sales. The sectors with the least disclosure - healthcare and financial services - are also the sectors where model failures would carry the highest real-world cost.
+
+
+---
+```{r hhi, fig.width=7, fig.height=4, fig.align='center', out.width='100%'}
+# HHI based on vendor counts per provider
+hhi_data <- confirmed %>%
+  filter(!is.na(provider), provider != "") %>%
+  mutate(provider = case_when(
+    provider %in% c("OpenaAI", "Azure", "AWS") ~ "OpenAI",
+    provider == "Claude"                        ~ "Anthropic",
+    provider %in% c("xAI","Poolside","Paige",
+                    "Kasisto","Writer","proprietary") ~ "In-house/unclear",
+    provider == "multi-LLM architecture"        ~ "Multi-provider routing",
+    TRUE ~ provider
+  )) %>%
+  filter(!provider %in% c("In-house/unclear", "Multi-provider routing")) %>%
+  group_by(provider) %>%
+  summarise(vendors = n_distinct(vendor), .groups = "drop") %>%
+  mutate(
+    total     = sum(vendors),
+    share     = vendors / total,
+    share_pct = round(share * 100, 1),
+    hhi_component = (share * 100)^2
+  )
+
+hhi_score <- round(sum(hhi_data$hhi_component))
+
+ggplot(hhi_data, aes(x = share_pct, y = fct_reorder(provider, share_pct))) +
+  geom_col(fill = "#1D9E75", width = 0.5) +
+  geom_text(aes(label = paste0(share_pct, "%")),
+            hjust = -0.2, size = 4, color = "gray30") +
+  scale_x_continuous(expand = expansion(mult = c(0, 0.2)),
+                     labels = function(x) paste0(x, "%")) +
+  labs(
+    title    = paste0("Provider market share, HHI: ", hhi_score),
+    subtitle = paste0(
+      "Among vendors with confirmed foundation model dependency (n = ",
+      sum(hhi_data$vendors), " vendor-provider links)\n",
+      "HHI above 2,500 indicates high concentration - excludes in house and multi provider vendors"
+    ),
+    x = NULL, y = NULL
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title       = element_text(size = 13, face = "bold", margin = margin(b = 4)),
+    plot.subtitle    = element_text(size = 9, color = "gray40", margin = margin(b = 12)),
+    panel.grid.major.y = element_blank(),
+    panel.grid.minor   = element_blank(),
+    axis.text        = element_text(size = 11),
+    legend.position  = "none"
+  )
+```
+
+3,950 is the HHI for the visible 23% of the market. For context, the Department of Justice considers any market above 2,500 highly concentrated. This number is a floor, not a ceiling. If the opaque 77% follows even a similar pattern, the true concentration score would be significantly higher. We have no way to know because the data does not exist.
+
+
+
+## Conclusion
+
+The enterprise AI ecosystem has a transparency problem. Most vendors do not disclose what foundation models power their products. Among the minority that do, the market is highly concentrated around two providers.
+This matters because concentration risk is only manageable when it is visible. Financial regulators can stress test banks because they can see the exposure. AI infrastructure has no equivalent. A single provider outage, pricing change, or policy shift could cascade across healthcare, legal, cybersecurity, and finance simultaneously. Nobody would see it coming because nobody can see the dependencies.
+The CrowdStrike outage in 2024 showed what happens when a single vendor sits inside thousands of critical systems. AI foundation models are that vendor for the next generation of software. The difference is that CrowdStrike was at least a known dependency. Most AI dependencies are not.
+Better disclosure standards are the minimum necessary first step. Without them, concentration risk in AI infrastructure is not just unmanaged. It is unmeasurable.
+
+

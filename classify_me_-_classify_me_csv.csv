@@ -1,0 +1,129 @@
+id,vendor,model,provider,source_excerpt
+81,Abridge,GPT-5.5,AWS,Early Access Impact Results from OpenAI's GPT-5.5
+26,Airtable,Claude,AWS,"Use AI models from leading providers (OpenAI, Gemini, Llama, Anthropic, and more)"
+,,,,
+,,,,
+,,,,
+,,,,
+102,Apollo.io,Claude,Anthropic,Apollo Now Powers Outbound Execution in Claude
+75,Augment Code,Claude Opus 4.5,Anthropic,All agents on Opus 4.5. Better results. It's the context.
+,,,,
+74,Augment Code,Gemini 3.1 Pro,Google,Frontier AI at half the cost: Gemini 3.1 Pro now available in Augment Code
+97,Bito,Claude 3.5 Sonnet,Anthropic,Get production-ready code in Cursor and Claude with Bito's AI Architect
+,,,,
+,,,,
+71,Box,Claude,Anthropic,"Box AI lets you seamlessly tap into leading AI models from OpenAI, Anthropic, and Google for real-time summaries, deep analysis, and smart recommendations."
+72,Box,Gemini,Google,"Box AI lets you seamlessly tap into leading AI models from OpenAI, Anthropic, and Google for real-time summaries, deep analysis, and smart recommendations."
+70,Box,GPT-4,OpenAI,"Box AI lets you seamlessly tap into leading AI models from OpenAI, Anthropic, and Google for real-time summaries, deep analysis, and smart recommendations."
+,,,,
+,,,,
+,,,,
+,,,,
+48,ClickUp,Claude,Anthropic,"Get More from Claude with ClickUp AI. Every AI: ChatGPT, Claude, Gemini — unlimited."
+49,ClickUp,Gemini,Google,"Every AI: ChatGPT, Claude, Gemini — unlimited."
+47,ClickUp,GPT-4,OpenAI,"Every AI: ChatGPT, Claude, Gemini — unlimited."
+2,CodeRabbit,Claude 3.5 Sonnet,Anthropic,"Claude Opus 4.7 outperformed in 100 evaluations across real open-source pull requests—finding more real bugs, delivering more actionable feedback, and reasoning across files better than anything we've tested."
+,,,,
+,,,,
+36,Codeium / Windsurf,GPT-5.1-Codex,AWS,"GPT 5.1, GPT 5.1-Codex, and GPT-5.1-Codex Mini are now available in Windsurf"
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+85,Cursor / Anysphere,Claude 3 Opus,Anthropic,"Choose between every cutting-edge model from OpenAI, Anthropic, Gemini, xAI, and Cursor... Opus 4.7"
+86,Cursor / Anysphere,Gemini 3.1 Pro,Google,"Choose between every cutting-edge model from OpenAI, Anthropic, Gemini, xAI, and Cursor... Gemini 3.1 Pro"
+84,Cursor / Anysphere,GPT-5.5,OpenAI,"Choose between every cutting-edge model from OpenAI, Anthropic, Gemini, xAI, and Cursor... Composer 2 GPT-5.5 Opus 4.7 Gemini 3.1 Pro Grok 4.3"
+87,Cursor / Anysphere,Grok 4.3,xAI,"Choose between every cutting-edge model from OpenAI, Anthropic, Gemini, xAI, and Cursor... Grok 4.3"
+,,,,
+,,,,
+62,Dropbox,Gpt 5.5,OpenAI,"AI is coming to Dropbox, with smarter search, faster drafting and summarization, and intelligent organization."
+,,,,
+,,,,
+106,ExtraHop,proprietary,proprietary,"Anthropic's Claude Mythos model has changed cybersecurity forever. Secure your environment against AI agents that bypass CMDBs, EDR, and SIEM by leveraging ML-powered network insights."
+30,Fathom,Chat gpt,OpenAI,"Your meeting data, now inside ChatGPT, Claude, and more"
+,,,,
+108,Fireflies.ai,Chat gpt,OpenAI,"Meeting Intelligence with Fireflies MCP
+Fireflies MCP Server lets you bring meeting insights into your AI tools like Claude, Devin, and ChatGPT in one click."
+,,,,
+69,Five9,GPT-4,OpenAI,Introduced Agent Assist 2.0 with AI Summary powered by OpenAI
+,,,,
+44,Glean,,Google ,"Claude Sonnet 4.5 optimizes tool execution to unlock 10% of queries that were previously out of reach. Glean supports Claude Sonnet 4.5 this week, giving users the ability to try the new model on real enterprise workloads."
+,,,,
+,,,,
+42,Glean,GPT-5.1,OpenAI,"OpenAI releases GPT-5.1, a steerable, token-efficient reasoning model available on Glean. GPT-5.1 offers a snappier, more steerable experience that's better at following user instructions than GPT-5."
+63,Hootsuite,multi-LLM architecture,multi-LLM architecture,Powered by TalkwalkerAI
+73,Ironclad,GPT-4,OpenAI,"2023
+AI Assist launches
+Ironclad launches AI Assist, a GPT-4–powered contract negotiation tool that flags risk, drafts clauses, takes a first pass at redlining, helping legal teams move faster with confidence."
+113,Kasisto,K-BERT,Kasisto,"Our first LLM for the financial services industry, K-BERT, launches. 2020-2022 Expanded across the Digital Banking Ecosystem"
+111,Kasisto,KAI-GPT,Kasisto,"Introducing KAI-GPT, the financial industry's most authoritative large language model. Combining our proprietary KAI large language model with the latest GPT technology, KAI-GPT is generative AI for the modern banking provider."
+112,Kasisto,KAI-GPTv4,Kasisto,"Introducing KAI-GPTv4: The Next Generation Banking LLM By Denys Katerenchuk, PhD, AI Engineer at Kasisto In the rapidly evolving landscape of artificial intelligence, the financial industry demands..."
+60,Kira Systems,GPT-4,OpenAI,We are incredibly excited about our continued partnership with Litera and the integration of Kira Smart Summaries with an OpenAI model.
+19,Klaviyo,Claude 3.5 Sonnet,Anthropic,Klaviyo expands Claude integration with agentic marketing capabilities
+20,Klaviyo,GPT-4,OpenAI,"We also integrate with your favorite AI tools with our Klaviyo ChatGPT app, Klaviyo Claude Connector, and Klaviyo MCP for building agentic workflows."
+5,Kore.ai,multi-LLM architecture,multi-LLM architecture,"Connect to any AI model - commercial, open-source, or bring your own - for automatic speech recognition, text-to-speech, and natural language understanding."
+,,,,
+18,Lavender,GPT-4,OpenAI,"We're powered by the latest GAI, including Open AI systems, self-hosted fine-tuned large language models, and LLMs powered by billions of custom data points."
+,,,,
+93,Lexion,GPT-4,OpenAI,Lexion Announces GPT-Based AI Contract Assist for Word - Lexion's AI Contract Assist leverages GPT technology to enhance contract analysis and drafting capabilities within Microsoft Word.
+16,LinkSquares,Claude,AWS,"The First and Only All-Agentic CLM. Built From The Ground Up. Draft, negotiate & analyze contracts—all in one platform with AI Legal Assistant. Powered by LinkAI."
+41,Lucid Software,Claude,Anthropic,"Lucid Software launches Lucid Claude Connector, bringing visual intelligence into AI workflows"
+40,Lucid Software,GPT-4,OpenAI,Lucid Software integrates real-time visual context into ChatGPT with MCP server app
+55,Mintlify,Claude,Anthropic,"See how Anthropic accelerates AI development with Mintlify. Read story. 2M+ Monthly active developers. 3+ Products serviced: Claude API, MCP, and Claude Code. Anthropic."
+56,Monday.com,Claude,Anthropic,"Connect to Claude, ChatGPT, Copilot, Gemini, or any MCP-connected tool."
+59,Monday.com,Gemini,Google,"Connect to Claude, ChatGPT, Copilot, Gemini, or any MCP-connected tool."
+58,Monday.com,Copilot,Microsoft,"Connect to Claude, ChatGPT, Copilot, Gemini, or any MCP-connected tool."
+57,Monday.com,ChatGPT,OpenAI,"Connect to Claude, ChatGPT, Copilot, Gemini, or any MCP-connected tool."
+,,,,
+,,,,
+95,Mutiny,Claude,Anthropic,How Mutiny gives every seller a full creative team with Claude
+52,Orca Security,GPT-4,OpenAI,Orca accelerates cloud security remediation powered by Microsoft Azure OpenAI Service GPT-4.
+7,Otter.ai,Claude,Anthropic,"Claude Can't Help With Your Work if it Doesn't Know What Happened in Your Meetings. Otter now integrates directly with Claude via MCP, making your meeting transcripts, summaries, and action items available to Claude as live, queryable context."
+8,Otter.ai,GPT-4,OpenAI,"Pull meeting knowledge into your favorite AI chat. ChatGPT, Claude, and other AI chat tools can securely access your meeting knowledge through Otter's MCP Server for deeper analysis and smarter workflows."
+68,Paige,PRISM,Paige,"Foundation Models: Virchow, Virchow2, Virchow2G, Virchow2G-Mini, PRISM"
+,,,,
+,,,,
+,,,,
+,,,,
+82,Palo Alto Networks,Claude Opus 4.7,Anthropic,"Enhancing AI-Driven Defense with Anthropic's Claude Opus 4.7. Apr 30, 2026. Palo Alto Networks integrates Anthropic's Claude Opus 4.7 for security defense capabilities."
+,,,,
+,,,,
+,,,,
+120,Pencil,Gemini,Google,Introducing Nano-banana (Gemini 2.5-flash Image)
+,,,,
+,,,,
+,,,,
+,,,,
+114,Pencil,GPT-4,OpenAI,"Pencil brings the best models from OpenAI, Google, Adobe, Runway, and Bria into one orchestration layer"
+115,Pencil,GPT-5,OpenAI,GPT-5 is LIVE NOW in Pencil
+,,,,
+,,,,
+38,Poolside,Laguna M.1,Poolside,"We've released the first two models in the Laguna family, Laguna M.1 and Laguna XS.2, alongside the runtime we use to train and operate agents, available through two product experiences in research preview."
+,,,,
+92,Rapid7,GPT-4,OpenAI,Rapid7 and OpenAI: Helping Defenders Move at Machine Speed
+22,Read AI,Claude,Anthropic,"Read AI Users Now Have Direct Access to OpenAI's ChatGPT and Anthropic's Claude—For Free. Starting today, Read AI is giving free unlimited access to the world's most powerful large language models for paid customers."
+21,Read AI,GPT-4,OpenAI,"Read AI Users Now Have Direct Access to OpenAI's ChatGPT and Anthropic's Claude—For Free. Starting today, Read AI is giving free unlimited access to the world's most powerful large language models for paid customers."
+,,,,
+,,,,
+,,,,
+6,Replit,Claude,Anthropic,"Enhance your apps with AI and 100+ integrations. Connect to OpenAI, Stripe, Google Workspace, and more in minutes."
+88,Sierra,ChatGPT,OpenAI,"Deploy a single agent across chat, SMS, WhatsApp, email, voice, and ChatGPT."
+,Sierra,Claude ,Anthropic,
+31,Snyk,proprietary,proprietary ,"To innovate securely with AI, companies need to adopt AI thoughtfully and delegate tasks that AI can do best...Snyk will support that by delivering industry-leading AI models"
+,,,,
+54,Spellbook,Opus,Anthropic,Spellbook is tuned for contracts and powered by state-of-the-art LLMs like GPT5 and Opus.
+53,Spellbook,GPT-5,OpenAI,Spellbook was the first generative AI copilot. Powered by OpenAI's GPT-5 and other large language models (LLMs) providing incredible performance.
+,,,,
+100,SymphonyAI Sensa,,Azure,SymphonyAI and Azure OpenAI copilot - Video featured in partners section showing strategic collaboration with Microsoft Azure AI for generative AI
+,,,,
+50,Taktile,proprietary,proprietary,Connect to best-in-class third-party providers and quickly adapt your data stack without vendor lock-in or long integrations. ... Anthropic ...
+,,,,
+17,Wiz,Claude 3.5 Opus,Anthropic,Red Agent and Claude Opus: Securing Production Targets at Scale - Delivering enterprise-grade continuous AI-powered risk assessment to hundreds of customers through the combined power of Wiz and Anthropic
+96,Writer,Palmyra LLMs,Claude,PLATFORM Palmyra LLMs Knowledge Graph Trust & security. WRITER's families of LLMs to bring together the best of AI and the best of their people.
+96,Writer,Palmyra LLMs,OpenaAI,PLATFORM Palmyra LLMs Knowledge Graph Trust & security. WRITER's families of LLMs to bring together the best of AI and the best of their people.

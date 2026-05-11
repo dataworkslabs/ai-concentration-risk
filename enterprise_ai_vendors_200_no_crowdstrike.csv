@@ -1,0 +1,201 @@
+name,sector,website,description,dependency
+SentinelOne,Cybersecurity AI,https://www.sentinelone.com,"Autonomous endpoint, cloud, and identity threat detection.",Unknown
+Darktrace,Cybersecurity AI,https://darktrace.com,Self-learning cyber defense and anomaly detection.,Unknown
+Vectra AI,Cybersecurity AI,https://www.vectra.ai,AI-driven network detection and response.,Unknown
+Abnormal Security,Cybersecurity AI,https://abnormalsecurity.com,AI email security for phishing and account compromise.,Unknown
+Snyk,Cybersecurity AI,https://snyk.io,AI-assisted application and code security.,Unknown
+Wiz,Cybersecurity AI,https://www.wiz.io,Cloud security posture and threat detection platform.,Unknown
+Orca Security,Cybersecurity AI,https://orca.security,Agentless cloud security and risk detection.,Unknown
+Lacework,Cybersecurity AI,https://www.lacework.com,Cloud security using behavioral anomaly detection.,Unknown
+ExtraHop,Cybersecurity AI,https://www.extrahop.com,Network detection and response with machine learning.,Unknown
+Tessian,Cybersecurity AI,https://www.tessian.com,Human-layer email security using behavioral AI.,Unknown
+Rubrik,Cybersecurity AI,https://www.rubrik.com,Cyber recovery and ransomware detection.,Unknown
+Arctic Wolf,Cybersecurity AI,https://arcticwolf.com,Managed detection and response platform.,Unknown
+Exabeam,Cybersecurity AI,https://www.exabeam.com,SIEM and user/entity behavior analytics.,Unknown
+Rapid7,Cybersecurity AI,https://www.rapid7.com,"Exposure management, SIEM, and detection tools.",Unknown
+Palo Alto Networks,Cybersecurity AI,https://www.paloaltonetworks.com,Enterprise security platform with AI threat detection.,Unknown
+Check Point,Cybersecurity AI,https://www.checkpoint.com,"Network, cloud, and endpoint threat prevention.",Unknown
+Fortinet,Cybersecurity AI,https://www.fortinet.com,AI-assisted network and endpoint security.,Unknown
+Sophos,Cybersecurity AI,https://www.sophos.com,"Endpoint, MDR, and threat protection.",Unknown
+Recorded Future,Cybersecurity AI,https://www.recordedfuture.com,Threat intelligence platform using AI analytics.,Unknown
+Cybereason,Cybersecurity AI,https://www.cybereason.com,Endpoint detection and response platform using behavioral analytics.,Unknown
+Harvey,Legal AI,https://www.harvey.ai,"Legal AI platform for research, drafting, due diligence, and workflows.",Azure OpenAI / GPT-4 / GPT-4 Turbo / o1 models publicly stated
+Casetext,Legal AI,https://casetext.com,AI legal research and drafting tools.,OpenAI/GPT-4 publicly associated with CoCounsel
+Everlaw,Legal AI,https://www.everlaw.com,AI-powered e-discovery and litigation platform.,Unknown
+Relativity,Legal AI,https://www.relativity.com,E-discovery and legal data review platform.,Unknown
+DISCO,Legal AI,https://www.csdisco.com,"AI e-discovery, legal hold, and case management.",Unknown
+Evisort,Legal AI,https://www.evisort.com,AI contract lifecycle management.,Unknown
+Ironclad,Legal AI,https://ironcladapp.com,Contract lifecycle management with AI contract review.,Unknown
+LinkSquares,Legal AI,https://linksquares.com,AI contract analytics and CLM.,Unknown
+Lexion,Legal AI,https://www.lexion.ai,Contract management and AI legal workflow platform.,Unknown
+Spellbook,Legal AI,https://www.spellbook.legal,AI contract drafting and review for lawyers.,OpenAI/GPT-4 publicly referenced
+Robin AI,Legal AI,https://www.robinai.com,AI contract review and legal assistant.,Anthropic Claude publicly associated
+Kira Systems,Legal AI,https://kirasystems.com,Contract analysis and due diligence AI.,Unknown
+Luminance,Legal AI,https://www.luminance.com,Legal document review and contract AI.,Unknown
+Litera,Legal AI,https://www.litera.com,"Legal drafting, transaction, and document workflow tools.",Unknown
+LexisNexis,Legal AI,https://www.lexisnexis.com,Legal research and analytics with generative AI.,Unknown / proprietary plus partner models not fully disclosed
+Thomson Reuters,Legal AI,https://www.thomsonreuters.com,"Legal research, drafting, and professional AI tools.",Unknown / proprietary plus partner models not fully disclosed
+vLex,Legal AI,https://vlex.com,Legal research platform with AI assistant Vincent.,Unknown
+FiscalNote,Legal AI,https://fiscalnote.com,"Legal, policy, and regulatory intelligence.",Unknown
+ContractPodAi,Legal AI,https://contractpodai.com,Contract lifecycle and legal AI assistant platform.,Unknown
+Brightflag,Legal AI,https://brightflag.com,AI legal spend and matter management.,Unknown
+Abridge,Healthcare AI,https://www.abridge.com,AI clinical documentation from patient conversations.,Unknown
+Nuance,Healthcare AI,https://www.nuance.com,Clinical speech recognition and documentation AI.,Microsoft-owned; dependency not listed as vendor here
+DeepScribe,Healthcare AI,https://www.deepscribe.ai,Ambient AI medical scribe.,Unknown
+Suki,Healthcare AI,https://www.suki.ai,AI voice assistant for clinicians.,Unknown
+Nabla,Healthcare AI,https://www.nabla.com,Ambient clinical AI assistant.,Unknown
+Regard,Healthcare AI,https://www.regard.com,AI clinical insights and diagnosis support.,Unknown
+Aidoc,Healthcare AI,https://www.aidoc.com,Radiology AI for imaging triage and detection.,Unknown
+Viz.ai,Healthcare AI,https://www.viz.ai,AI care coordination for stroke and vascular disease.,Unknown
+Qure.ai,Healthcare AI,https://www.qure.ai,AI medical imaging diagnostics.,Unknown
+PathAI,Healthcare AI,https://www.pathai.com,AI pathology and diagnostic support.,Unknown
+Tempus,Healthcare AI,https://www.tempus.com,AI precision medicine and oncology data platform.,Unknown
+Owkin,Healthcare AI,https://www.owkin.com,AI drug discovery and biomedical research platform.,Unknown
+Insilico Medicine,Healthcare AI,https://insilico.com,AI drug discovery and target identification.,Unknown
+Biofourmis,Healthcare AI,https://www.biofourmis.com,AI remote patient monitoring and digital therapeutics.,Unknown
+Cleerly,Healthcare AI,https://cleerlyhealth.com,AI cardiovascular imaging analysis.,Unknown
+Paige,Healthcare AI,https://www.paige.ai,AI pathology platform.,Unknown
+Arterys,Healthcare AI,https://www.arterys.com,Cloud-based medical imaging AI.,Unknown
+Butterfly Network,Healthcare AI,https://www.butterflynetwork.com,AI-assisted ultrasound imaging.,Unknown
+Freenome,Healthcare AI,https://www.freenome.com,AI multiomics cancer screening.,Unknown
+Hippocratic AI,Healthcare AI,https://www.hippocraticai.com,Healthcare-focused generative AI agents.,Unknown
+Upstart,Financial Services AI,https://www.upstart.com,AI lending and credit risk platform.,Unknown
+Zest AI,Financial Services AI,https://www.zest.ai,AI credit underwriting and risk modeling.,Unknown
+DataRobot,Financial Services AI,https://www.datarobot.com,Enterprise AI/ML platform used in financial modeling.,Unknown
+Kensho,Financial Services AI,https://www.kensho.com,AI analytics for financial markets and business data.,Unknown
+AlphaSense,Financial Services AI,https://www.alpha-sense.com,AI market intelligence and financial research.,Unknown
+Hebbia,Financial Services AI,https://www.hebbia.ai,AI document analysis for finance and professional services.,Unknown
+S&P Global Kensho,Financial Services AI,https://www.spglobal.com/kensho,AI for financial data extraction and analytics.,Unknown
+Socure,Financial Services AI,https://www.socure.com,AI identity verification and fraud prevention.,Unknown
+Feedzai,Financial Services AI,https://feedzai.com,AI fraud detection and financial crime prevention.,Unknown
+Featurespace,Financial Services AI,https://www.featurespace.com,Adaptive behavioral analytics for fraud detection.,Unknown
+ComplyAdvantage,Financial Services AI,https://complyadvantage.com,AI financial crime and AML screening.,Unknown
+SymphonyAI Sensa,Financial Services AI,https://www.symphonyai.com,AI financial crime detection and investigation.,Unknown
+Ayasdi,Financial Services AI,https://ayasdi.com,AI analytics for financial risk and compliance.,Unknown
+H2O.ai,Financial Services AI,https://h2o.ai,Enterprise AI platform for predictive modeling.,Unknown
+WorkFusion,Financial Services AI,https://www.workfusion.com,AI digital workers for financial crime operations.,Unknown
+Kasisto,Financial Services AI,https://kasisto.com,Conversational AI for banking.,Unknown
+Personetics,Financial Services AI,https://personetics.com,AI financial engagement and personalization.,Unknown
+Taktile,Financial Services AI,https://www.taktile.com,Decision automation for fintech risk workflows.,Unknown
+Unit21,Financial Services AI,https://www.unit21.ai,AI-assisted fraud and AML operations.,Unknown
+Oscilar,Financial Services AI,https://oscilar.com,"AI risk, fraud, and compliance platform.",Unknown
+Eightfold AI,HR and Recruiting AI,https://eightfold.ai,Talent intelligence and workforce planning platform.,Unknown
+SeekOut,HR and Recruiting AI,https://www.seekout.com,AI talent search and recruiting platform.,Unknown
+HireVue,HR and Recruiting AI,https://www.hirevue.com,AI-supported interviewing and hiring assessment platform.,Unknown
+Paradox,HR and Recruiting AI,https://www.paradox.ai,Conversational recruiting assistant Olivia.,Unknown
+Phenom,HR and Recruiting AI,https://www.phenom.com,AI talent experience and recruiting CRM.,Unknown
+Beamery,HR and Recruiting AI,https://beamery.com,Talent lifecycle and workforce intelligence platform.,Unknown
+Greenhouse,HR and Recruiting AI,https://www.greenhouse.com,Applicant tracking and hiring platform with AI features.,Unknown
+Lever,HR and Recruiting AI,https://www.lever.co,Recruiting CRM and ATS with AI hiring workflows.,Unknown
+Workday,HR and Recruiting AI,https://www.workday.com,"HR, finance, and talent AI platform.",Unknown
+SAP SuccessFactors,HR and Recruiting AI,https://www.sap.com/products/hcm.html,Enterprise HCM suite with AI talent tools.,Unknown
+iCIMS,HR and Recruiting AI,https://www.icims.com,Talent acquisition platform with AI matching and automation.,Unknown
+SmartRecruiters,HR and Recruiting AI,https://www.smartrecruiters.com,Enterprise recruiting platform with AI features.,Unknown
+Ashby,HR and Recruiting AI,https://www.ashbyhq.com,"Recruiting analytics, ATS, and AI workflows.",Unknown
+Findem,HR and Recruiting AI,https://www.findem.ai,AI talent sourcing and candidate intelligence.,Unknown
+Textio,HR and Recruiting AI,https://textio.com,AI writing platform for inclusive hiring content.,Unknown
+Pymetrics,HR and Recruiting AI,https://www.pymetrics.ai,Behavioral assessment and talent matching AI.,Unknown
+SkyHive,HR and Recruiting AI,https://www.skyhive.ai,Workforce intelligence and skills taxonomy AI.,Unknown
+Visier,HR and Recruiting AI,https://www.visier.com,People analytics and workforce planning AI.,Unknown
+Lattice,HR and Recruiting AI,https://lattice.com,Performance management and employee engagement AI.,Unknown
+15Five,HR and Recruiting AI,https://www.15five.com,Performance management and employee feedback platform.,Unknown
+Salesforce,Sales and CRM AI,https://www.salesforce.com,CRM and Agentforce AI sales/service platform.,OpenAI and Anthropic partnerships publicly reported
+HubSpot,Sales and CRM AI,https://www.hubspot.com,CRM platform with AI sales and marketing tools.,Unknown
+Gong,Sales and CRM AI,https://www.gong.io,Revenue intelligence and sales conversation AI.,Unknown
+Clari,Sales and CRM AI,https://www.clari.com,Revenue forecasting and pipeline intelligence.,Unknown
+Outreach,Sales and CRM AI,https://www.outreach.io,Sales engagement and revenue workflow automation.,Unknown
+Salesloft,Sales and CRM AI,https://www.salesloft.com,Sales engagement and revenue orchestration platform.,Unknown
+6sense,Sales and CRM AI,https://6sense.com,Account-based sales intelligence and predictive buying signals.,Unknown
+Apollo.io,Sales and CRM AI,https://www.apollo.io,Sales intelligence and outbound automation.,Unknown
+ZoomInfo,Sales and CRM AI,https://www.zoominfo.com,B2B contact intelligence and go-to-market AI.,Unknown
+People.ai,Sales and CRM AI,https://people.ai,Revenue activity capture and sales analytics.,Unknown
+Nooks,Sales and CRM AI,https://www.nooks.ai,AI sales calling and prospecting platform.,Unknown
+Regie.ai,Sales and CRM AI,https://www.regie.ai,AI sales prospecting and content generation.,Unknown
+Lavender,Sales and CRM AI,https://www.lavender.ai,AI email coaching for sales teams.,Unknown
+Drift,Sales and CRM AI,https://www.drift.com,Conversational marketing and sales chatbot platform.,Unknown
+Qualified,Sales and CRM AI,https://www.qualified.com,Pipeline generation and AI SDR platform.,Unknown
+Demandbase,Sales and CRM AI,https://www.demandbase.com,Account-based marketing and sales intelligence.,Unknown
+Seismic,Sales and CRM AI,https://seismic.com,AI sales enablement and content platform.,Unknown
+Highspot,Sales and CRM AI,https://www.highspot.com,Sales enablement and content intelligence.,Unknown
+Avoma,Sales and CRM AI,https://www.avoma.com,AI meeting assistant for sales and customer teams.,Unknown
+Chorus.ai,Sales and CRM AI,https://www.zoominfo.com/products/chorus,Conversation intelligence for sales teams.,Unknown
+Jasper,Marketing AI,https://www.jasper.ai,AI marketing workflow and content generation platform.,Multi-model routing publicly described; exact model mix not fixed
+Writer,Marketing AI,https://writer.com,Enterprise generative AI platform for brand-safe content.,Unknown / uses proprietary Palmyra models
+Typeface,Marketing AI,https://www.typeface.ai,Generative AI content platform for enterprise marketing.,Unknown
+Persado,Marketing AI,https://www.persado.com,AI language generation for marketing performance.,Unknown
+Mutiny,Marketing AI,https://www.mutinyhq.com,AI website personalization and conversion platform.,Unknown
+Anyword,Marketing AI,https://www.anyword.com,AI copywriting and predictive performance scoring.,Unknown
+Copy.ai,Marketing AI,https://www.copy.ai,AI go-to-market workflow automation.,Unknown
+Phrasee,Marketing AI,https://phrasee.co,AI marketing language optimization.,Unknown
+Albert AI,Marketing AI,https://albert.ai,Autonomous digital advertising optimization.,Unknown
+Smartly.io,Marketing AI,https://www.smartly.io,AI creative and ad campaign automation.,Unknown
+Omneky,Marketing AI,https://www.omneky.com,AI-generated ad creative and performance optimization.,Unknown
+Pencil,Marketing AI,https://www.trypencil.com,Generative AI ad creative platform.,Unknown
+AdCreative.ai,Marketing AI,https://www.adcreative.ai,AI ad creative generation and scoring.,Unknown
+Sprinklr,Marketing AI,https://www.sprinklr.com,Enterprise customer experience and social AI platform.,Unknown
+Brandwatch,Marketing AI,https://www.brandwatch.com,AI consumer intelligence and social listening.,Unknown
+Hootsuite,Marketing AI,https://www.hootsuite.com,Social media management with AI content tools.,Unknown
+Emplifi,Marketing AI,https://emplifi.io,Social marketing and customer engagement AI.,Unknown
+Braze,Marketing AI,https://www.braze.com,Customer engagement and personalization platform.,Unknown
+Klaviyo,Marketing AI,https://www.klaviyo.com,AI email/SMS marketing automation.,Unknown
+Bloomreach,Marketing AI,https://www.bloomreach.com,"AI ecommerce search, personalization, and marketing automation.",Unknown
+Intercom,Customer Support AI,https://www.intercom.com,Fin AI agent for customer support automation.,GPT-4 / OpenAI publicly stated
+Zendesk,Customer Support AI,https://www.zendesk.com,Customer service platform with AI agents and copilots.,Unknown
+Ada,Customer Support AI,https://www.ada.cx,AI customer service automation platform.,Unknown
+Forethought,Customer Support AI,https://forethought.ai,AI customer support agent and ticket automation.,Unknown
+Sierra,Customer Support AI,https://sierra.ai,Conversational AI agents for customer service.,Unknown
+Ultimate,Customer Support AI,https://www.ultimate.ai,Customer support automation platform.,Unknown
+Helpshift,Customer Support AI,https://www.helpshift.com,AI support automation for mobile apps and games.,Unknown
+Freshworks,Customer Support AI,https://www.freshworks.com,Customer support and IT service AI platform.,Unknown
+Kustomer,Customer Support AI,https://www.kustomer.com,AI CRM and support platform.,Unknown
+Gladly,Customer Support AI,https://www.gladly.com,Customer service platform with AI assistance.,Unknown
+Cresta,Customer Support AI,https://cresta.com,AI contact center coaching and automation.,Unknown
+Observe.AI,Customer Support AI,https://www.observe.ai,"Contact center AI for QA, coaching, and automation.",Unknown
+Balto,Customer Support AI,https://www.balto.ai,Real-time AI guidance for contact center agents.,Unknown
+Level AI,Customer Support AI,https://thelevel.ai,Contact center intelligence and automation.,Unknown
+ASAPP,Customer Support AI,https://www.asapp.com,AI customer experience automation for contact centers.,Unknown
+Talkdesk,Customer Support AI,https://www.talkdesk.com,Cloud contact center with AI automation.,Unknown
+Genesys,Customer Support AI,https://www.genesys.com,Contact center platform with AI routing and automation.,Unknown
+Five9,Customer Support AI,https://www.five9.com,AI contact center and virtual agent platform.,Unknown
+NICE,Customer Support AI,https://www.nice.com,CXone contact center AI and workforce automation.,Unknown
+Kore.ai,Customer Support AI,https://kore.ai,Enterprise conversational AI and virtual agents.,Unknown
+Glean,Productivity AI,https://www.glean.com,"Enterprise AI search, assistant, and knowledge platform.","Supports OpenAI, Azure OpenAI, Vertex AI, and AWS Bedrock publicly stated"
+Notion,Productivity AI,https://www.notion.so,"Workspace, docs, wiki, and AI assistant.",Unknown
+Coda,Productivity AI,https://coda.io,Collaborative docs and workflow platform with AI.,Unknown
+Grammarly,Productivity AI,https://www.grammarly.com,AI writing and communication assistant.,Unknown
+Otter.ai,Productivity AI,https://otter.ai,AI meeting transcription and summaries.,Unknown
+Fireflies.ai,Productivity AI,https://fireflies.ai,AI meeting notes and conversation intelligence.,Unknown
+Fathom,Productivity AI,https://fathom.video,AI meeting recording and summaries.,Unknown
+Read AI,Productivity AI,https://www.read.ai,AI meeting summaries and productivity analytics.,Unknown
+Reclaim.ai,Productivity AI,https://reclaim.ai,AI calendar and scheduling automation.,Unknown
+Clockwise,Productivity AI,https://www.getclockwise.com,AI scheduling and calendar optimization.,Unknown
+Motion,Productivity AI,https://www.usemotion.com,AI task and calendar planning.,Unknown
+ClickUp,Productivity AI,https://clickup.com,Work management platform with AI assistant.,Unknown
+Asana,Productivity AI,https://asana.com,Work management with AI project assistance.,Unknown
+Monday.com,Productivity AI,https://monday.com,Work operating system with AI workflow tools.,Unknown
+Airtable,Productivity AI,https://www.airtable.com,App-building and database platform with AI.,Unknown
+Box,Productivity AI,https://www.box.com,Content cloud with AI document intelligence.,Unknown
+Dropbox,Productivity AI,https://www.dropbox.com,File storage and AI search/summarization tools.,Unknown
+Miro,Productivity AI,https://miro.com,Visual collaboration workspace with AI features.,Unknown
+Lucid Software,Productivity AI,https://lucid.co,Diagramming and visual collaboration with AI.,Unknown
+Guru,Productivity AI,https://www.getguru.com,Enterprise knowledge management and AI answers.,Unknown
+Cursor / Anysphere,Developer Tools AI,https://cursor.com,AI code editor for software development.,Unknown
+Codeium / Windsurf,Developer Tools AI,https://windsurf.com,AI coding assistant and editor.,Unknown
+Replit,Developer Tools AI,https://replit.com,Cloud development platform with AI coding assistant.,Unknown
+Tabnine,Developer Tools AI,https://www.tabnine.com,Enterprise AI code completion assistant.,Unknown
+Sourcegraph,Developer Tools AI,https://sourcegraph.com,Code intelligence and AI coding assistant Cody.,Unknown
+CodeRabbit,Developer Tools AI,https://www.coderabbit.ai,AI code review assistant.,Unknown
+Snyk,Developer Tools AI,https://snyk.io,AI-assisted developer security and vulnerability remediation.,Unknown
+Sonar,Developer Tools AI,https://www.sonarsource.com,Code quality and security analysis with AI assistance.,Unknown
+JetBrains,Developer Tools AI,https://www.jetbrains.com,IDEs and AI coding assistant.,Unknown
+LinearB,Developer Tools AI,https://linearb.io,Engineering intelligence and delivery analytics.,Unknown
+Swimm,Developer Tools AI,https://swimm.io,AI code documentation platform.,Unknown
+Mintlify,Developer Tools AI,https://mintlify.com,AI documentation platform for developers.,Unknown
+Qodo,Developer Tools AI,https://www.qodo.ai,AI code testing and review platform.,Unknown
+CodiumAI,Developer Tools AI,https://www.codium.ai,AI test generation and code integrity tools.,Unknown
+Devin / Cognition,Developer Tools AI,https://www.cognition.ai,AI software engineering agent.,Unknown
+Poolside,Developer Tools AI,https://poolside.ai,AI software engineering platform.,Unknown
+Mutable AI,Developer Tools AI,https://mutable.ai,AI codebase documentation and development tools.,Unknown
+Augment Code,Developer Tools AI,https://www.augmentcode.com,AI coding assistant for large codebases.,Unknown
+Continue,Developer Tools AI,https://www.continue.dev,Open-source AI coding assistant framework.,User-configured models; supports multiple providers
+Bito,Developer Tools AI,https://bito.ai,AI coding assistant for developers and engineering teams.,Unknown
